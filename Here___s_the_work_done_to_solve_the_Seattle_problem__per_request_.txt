@@ -1,0 +1,16 @@
+P(A | B) =
+"Given today is a cloudy morning, what is the chance it will be rainy"
+
+- A is "today is a rainy day"
+- B is "today is a cloudy morning"
+
+P(A) = "probabiltiy that it will rain today" = ( 3 / 30 ) = 10%
+
+P(B) = "probability that a morning will be cloudy" = 40%
+
+P(B | A) = "it will be cloudy given it is going to be a rainy day" = 50%
+
+
+P(A | B) = P(B | A) * P(A) / P(B)
+       	 = 50% * 10% / 40%
+      	 = 0.5 * 0.1 / 0.4

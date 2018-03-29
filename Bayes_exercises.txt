@@ -1,0 +1,19 @@
+Exercise:
+
+Suppose there are two full bowls of cookies. Bowl #1 has 1 chocolate chip and 3 plain cookies, while bowl #2 has 2 of each. Our friend Fred picks a bowl at random, and then picks one cookie at random (what distribution is completely "random"?). The cookie turns out to be plain. How probable is it that Fred picked it out of Bowl #1?
+
+Exercise:
+
+Suppose there are two full bowls of cookies. Bowl #1 has 1 chocolate chip and 3 plain cookies, while bowl #2 has 2 of each. Our friend Fred picks a bowl at random, and then picks TWO cookies, one after the other, at random (what distribution is completely "random"?). BOTH cookies turn out to be plain. How probable is it that Fred picked them out of Bowl #1?
+
+Exercise BONUS:
+
+Suppose there are two full bowls of cookies. Bowl #1 has 1 chocolate chip and 3 plain cookies, while bowl #2 has 2 of each. Our friend Fred picks a bowl at random, and then picks TWO cookies, simultaneously, at random (what distribution is completely "random"?). BOTH cookies turn out to be plain. How probable is it that Fred picked them out of Bowl #1?
+
+Exercise:
+
+Suppose there are three jars of white and black balls. Jar #1 has 20 w, 10 b, Jar #2 has 15 of each. Jar#3 has 5 w, 25 b.
+
+Heather picks a jar at random and draws three balls, two white and one black. How likely is it that they came from the third jar? What jar are they most likely to have come from?
+
+Exercise: We have three dice in a box, a 6 sided, an 8 sided and a 12 sided. I pick one at random and roll a 4. Which of the three dice is it most likely to be? Suppose instead, I rolled an 8. Now, which of the three dice is it most likely to be?
