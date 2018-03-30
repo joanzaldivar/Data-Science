@@ -10,8 +10,7 @@ class Bayes(object):
     def __init__(self, prior, likelihood_func):
         self.prior = prior
         self.likelihood_func = likelihood_func
-
-
+        
     def normalize(self):
         '''
         INPUT: None
@@ -19,7 +18,16 @@ class Bayes(object):
 
         Makes the sum of the probabilities equal 1.
         '''
-        pass
+        #alternate solution #1 -- this doesn't work because it recreates the prior 
+        # instead of updating it
+        #self.prior = {k:v/sum(self.prior.values()) for k, v in self.prior.items()}
+        
+        total = sum(self.prior.values())
+        #print("total before normalization: {}".format(total))
+        for k, v in self.prior.items():            
+            self.prior[k] = self.prior[k] / total          
+        #total = sum(self.prior.values())
+        #print("total after normalization: {}".format(total))
 
     def update(self, data):
         '''
@@ -31,10 +39,27 @@ class Bayes(object):
         Conduct a bayesian update. Multiply the prior by the likelihood and
         make this the new prior.
         '''
-        pass
+        #alternate solution #1
+        #self.prior = {k:v*self.likelyhood_func(data,k) for k, v in self.prior.items()}
+        #self.normalize()
+        
+        #alternate solution #2
+        #for die in self.prior:
+        #    self.prior[die] *= self.likelihood_func(data, die)
+        
+        for die, prior in self.prior.items():
+            #print("update die: {}, prior: {}, likelihood: {}".format(die, self.prior[die], self.likelihood_func(data, die)))
+            self.prior[die] = self.prior[die] * self.likelihood_func(data, die)
+            #print("updated die: {}, posterior: {}".format(die, self.prior[die]))
+        self.normalize()    
+        
 
     def print_distribution(self):
         '''
         Print the current posterior probability.
         '''
-        pass
+        #alternate solution #1
+        #print(sorted(self.prior.items()))
+        
+        for die in sorted(self.prior.keys()):
+            print ("die: {}, posterior: {}".format(die, self.prior[die]))
